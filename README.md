@@ -23,3 +23,18 @@
 
 ## コードスニペットと例
  - [Developing a Pricing Strategy to Maximize Revenue](https://www.datascience.com/resources/notebooks/python-dynamic-pricing)
+
+## アドテク的な側面でのプライス調整
+ - [How Dynamic Pricing Uses Machine Learning to Increase Revenue](https://sweetpricing.com/blog/2017/02/machine-learning/)
+ 
+## 考えていること
+ - 席やサービスのユーザ接触数Sと、券売確率pと独立だと仮定する。  
+ - pは価格によって変化する変数だと捉えることができる => p(m):mはmoney 
+ - Income = S * p(m) 
+ 
+ - Sはサービスの特定の粒度で機械学習modelAで学習する
+ - p(m)もSと同じサービスの粒度で機械学習modelBを学習する
+ 
+ 特定の月, 曜日, 休日とうのパラメータを特徴量として、予想するIncome量は、このようになる  
+ 
+  `Income = S * p(m)`
